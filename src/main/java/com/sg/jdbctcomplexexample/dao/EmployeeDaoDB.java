@@ -68,7 +68,7 @@ public class EmployeeDaoDB implements EmployeeDao {
         public Employee mapRow(ResultSet rs, int index) throws SQLException {
             Employee emp = new Employee();
             emp.setId(rs.getInt("id"));
-            emp.setFirstName(rs.getString("firstName"));
+            emp.setFirstName(rs.getString("firstNames"));
             emp.setLastName(rs.getString("lastName"));
             return emp;
         }
