@@ -64,7 +64,6 @@ public class EmployeeDaoDB implements EmployeeDao {
         jdbc.update(DELETE_EMPLOYEE, id);
     }
     public static final class EmployeeMapper implements RowMapper<Employee> {
-
         @Override
         public Employee mapRow(ResultSet rs, int index) throws SQLException {
             Employee emp = new Employee();
